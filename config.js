@@ -36,10 +36,9 @@ const adminUi = authStrategy => {
   };
 };
 
-const nuxtApp = () => {
+const nextApp = () => {
   return {
-    srcDir: 'src',
-    buildDir: 'build',
+    dir: 'app',
   };
 };
 
@@ -48,5 +47,5 @@ module.exports = {
   authStrategy,
   adminUi,
   keystone,
-  nuxtApp,
+  nextApp,
 };

@@ -3,7 +3,7 @@ const { PasswordAuthStrategy } = require('@keystonejs/auth-password');
 const { GraphQLApp } = require('@keystonejs/app-graphql');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
 const { KnexAdapter: Adapter } = require('@keystonejs/adapter-knex');
-const { NuxtApp } = require('@keystonejs/app-nuxt');
+const { NextApp } = require('@keystonejs/app-next');
 
 const dotenv = require('dotenv');
 
@@ -26,6 +26,6 @@ module.exports = {
   apps: [
     new GraphQLApp(),
     new AdminUIApp(config.adminUi(authStrategy)),
-    new NuxtApp(config.nuxtApp()),
+    new NextApp(config.nextApp()),
   ],
 };
