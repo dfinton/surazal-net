@@ -63,8 +63,8 @@ typings/
 # VIM session file
 .session
 
-# Drexel build folders
-dist/*
+# Build folders
+build
 
 # RSA keys
 *.key
